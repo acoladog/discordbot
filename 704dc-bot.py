@@ -9,12 +9,12 @@ bot = commands.Bot(command_prefix='', intents=intents)
 @bot.event
 async def on_ready():
     print('目前登入身份：', bot.user)
-    #channel = bot.get_channel(1000976647941533756)
+    #channel = bot.get_channel([...])
     #await channel.send('我上線了')
 
 @bot.event
 async def on_member_join(member):
-    channel = bot.get_channel(1018082828967215115)
+    channel = bot.get_channel([...])
     await channel.send(f'歡迎 {member} 加入 dc 704 班')
     #guild = bot.get_guild(member)
             #role = guild.get_role(1015799270525378581)
@@ -22,7 +22,7 @@ async def on_member_join(member):
 
 @bot.event
 async def on_member_leave(member):
-    channel = bot.get_channel(1018082860617433129)
+    channel = bot.get_channel([...]v)
     await channel.send(f'喔不！{member} 離開我們了')
 
 @bot.event
